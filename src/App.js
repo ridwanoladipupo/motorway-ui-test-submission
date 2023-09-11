@@ -1,31 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Users from './Pages/Users';
+import CreateProfile from './Pages/CreateProfile';
+
 
 const App = () => {
-  const [images, setImages] = useState();
-
-  useEffect(() => {
-    fetch('images?limit=10')
-      .then(res => res.json())
-      .then(data => {
-        console.log('Success:', data);
-        setImages(data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  }, []);
 
   return (
-    <div className='app'>
-      {
-        images && images.map(img => (
-          <div key={img.id} >
-            <img src={`${img.url}.jpg`} alt=''/>
-            <img src={`${img.user.profile_image}.webp`} alt=''/>
-          </div>
-        ))
-      }
+    <div className=''>
+     <Router>
+        <Routes>
+            <Route path="/" Component={Users}/>
+            <Route path="/create-profile" Component={CreateProfile}/>
+        </Routes>
+      
+      </Router> 
     </div>
   );
 }
