@@ -10,7 +10,7 @@
 
 ### For Performance Optimization
 
-1. I added Pagination. By pagination, the App will only fetching and rendering a reasonable number of images at a time.
+1. I added Pagination. With the pagination, the App will only fetch and render 10 images or a reasonable number of images at a time.
 
 2. I implemented Skeleton to indicate the loading state when a call is made and the data is fetching. This would enhance the user experience and perceived performance.
 
