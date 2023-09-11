@@ -21,4 +21,4 @@ For performance measurement,
    - **Network Tab**: I will monitor the API response times, request and response sizes, and loading times for the images.
    - **Lighthouse**: I will run Lighthouse audits to measure performance, accessibility, SEO, and best practices.
 
-2. I will do before-and-after testing by recording performance metrics (e.g., page load time, API response time) both before and after implementing optimizations. Compare the metrics to quantify the improvements.
+2. I will perform before-and-after testing by recording performance metrics (e.g., page load time, API response time) both before and after implementing optimizations. Compare the metrics to quantify the improvements.
